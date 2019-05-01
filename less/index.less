@@ -57,3 +57,46 @@ html, body {
     height: 100%;
 }
 
+@font-color: red;
+@font-size:15px;
+@title-font-size:30px;
+.container{
+	width:900px;
+	height:900px;
+	margin:auto;
+	border: 1px solid black;
+
+	h1{
+		font-size:40px;
+	}
+	
+
+	.tophead{
+		width:900px;
+		padding:20px 0px;
+		margin:auto;
+		display:flex;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	 nav a{
+		margin:0px 40px;
+		padding: 3px;
+		background:grey;
+		border-radius: 10%;
+		border:1px solid blueviolet;
+	}
+}
+
+h2{
+	font-size: @title-font-size;
+}
+
+.whole-content{
+	border:1px solid red;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: @font-size;
+}
