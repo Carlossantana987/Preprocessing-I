@@ -81,11 +81,15 @@ html, body {
 			width:100%;
 			justify-content: center;
 		}
+	
+	
+		a{
+			margin:0px 20px;
+		}
+	
 	}
 
-	a{
-		margin:0px 20px;
-	}
+	
 
 
 
@@ -98,7 +102,7 @@ html, body {
 	flex-direction: column;
 	justify-content:flex-start;
 	
-	.intro();
+	.remark();
 	
 	.intro{
 
@@ -106,15 +110,15 @@ html, body {
 	}
 	
 	h2{
-		margin: 20px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
 	font-size: 60px;
 	font-family: 'raleway' , sans-serif;
 	}
 	
 	.remark{
-		border-bottom:1px solid grey;
-		padding: 0% 0% 2%;
+		border-bottom:1px solid white;
 		font-size:20px;
+		padding:0px 0px 10px 0px;
 		
 	}
 	p{
@@ -128,10 +132,6 @@ html, body {
 
 
 
-h2{
-
-	font-size: @title-font-size;
-}
 
 .whole-content{
 	width:899px;
@@ -144,9 +144,14 @@ h2{
 	@media(max-width:500px){
 		width:100%;
 		display:flex;
+		justify-content: center;
 
 	}
+	
+	h2{
+		font-size: @title-font-size;
 	}
+	
 	.top-content{
 		padding:15px 0px;
 		width:45%;
@@ -164,13 +169,14 @@ h2{
 
 .table{
 	width:100%;
-	margin:10px 0px;
+	margin:3% 0%;
 	display:flex;
 	flex-direction: row;
 	font-size: @standard-font-size;
 
 	.lead-column{
-		font-size:21px;
+		border-bottom: 1px solid grey;
+		font-size:100%;
 	}
 	.column-one{
 		width:10%;
@@ -200,12 +206,13 @@ h2{
 	height:60px;
 	margin:10px 0px 0px;
 	background:grey;
+	.copyright-stamp();
 	
-	p{
+	
+	.copyright-stamp{
 		text-align: center;
 		padding:15px 0px 0px;
 		color:white;
 	}
 }
-
-
+}

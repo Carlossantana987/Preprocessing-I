@@ -153,7 +153,7 @@ body {
     justify-content: center;
   }
 }
-.container a {
+.container .tophead nav a {
   margin: 0px 20px;
 }
 .container .intro-sec {
@@ -163,6 +163,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
 }
 .container .intro-sec .intro {
   margin: 50px 40px;
@@ -173,16 +176,13 @@ body {
   font-family: 'raleway', sans-serif;
 }
 .container .intro-sec .remark {
-  border-bottom: 1px solid grey;
-  padding: 0% 0% 2%;
+  border-bottom: 1px solid white;
   font-size: 20px;
+  padding: 0px 0px 10px 0px;
 }
 .container .intro-sec p {
   margin: 20px 0px 0px;
   font-size: 19px;
-}
-.container h2 {
-  font-size: 30px;
 }
 .container .whole-content {
   width: 899px;
@@ -196,49 +196,57 @@ body {
   .container .whole-content {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
 }
-.container .top-content {
+.container .whole-content h2 {
+  font-size: 30px;
+}
+.container .whole-content .top-content {
   padding: 15px 0px;
   width: 45%;
   font-size: 19px;
 }
-.container li {
+.container .whole-content li {
   border: 1px solid black;
   padding: 10px;
 }
-.table {
+.container .table {
   width: 100%;
-  margin: 10px 0px;
+  margin: 3% 0%;
   display: flex;
   flex-direction: row;
   font-size: 19px;
 }
-.table .lead-column {
-  font-size: 21px;
+.container .table .lead-column {
+  border-bottom: 1px solid grey;
+  font-size: 100%;
 }
-.table .column-one {
+.container .table .column-one {
   width: 10%;
 }
-.table .column-two {
+.container .table .column-two {
   width: 20%;
 }
-.table .column-three {
+.container .table .column-three {
   width: 40%;
 }
-.table .column-four {
+.container .table .column-four {
   width: 30%;
 }
-.table li {
+.container .table li {
   padding: 10px;
 }
-.footer {
+.container .footer {
   width: 100%;
   height: 60px;
   margin: 10px 0px 0px;
   background: grey;
+  text-align: center;
+  padding: 15px 0px 0px;
+  color: white;
 }
-.footer p {
+.container .footer .copyright-stamp {
   text-align: center;
   padding: 15px 0px 0px;
   color: white;
