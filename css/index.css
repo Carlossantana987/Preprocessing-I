@@ -132,13 +132,13 @@ table {
 }
 html,
 body {
+  background: whitesmoke;
   height: 100%;
 }
 .container {
-  border: 1px solid black;
-  width: 900px;
+  max-width: 900px;
   margin: auto;
-  height: auto;
+  height: 100%;
 }
 .container .tophead nav {
   width: 900px;
@@ -147,36 +147,99 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  .container .tophead nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .container a {
   margin: 0px 20px;
 }
-.intro-sec {
+.container .intro-sec {
+  background: grey;
   width: 100%;
-  height: 710px;
-  background: #e2dfdf;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.intro-sec .intro {
+.container .intro-sec .intro {
   margin: 50px 40px;
 }
-.intro-sec h2 {
+.container .intro-sec h2 {
+  margin: 20px 0px 0px 0px;
   font-size: 60px;
   font-family: 'raleway', sans-serif;
 }
-.intro-sec p {
-  border: 1px solid red;
-  margin: 20px 0px;
-  display: flex;
-  font-size: 25px;
+.container .intro-sec .remark {
+  border-bottom: 1px solid grey;
+  padding: 0% 0% 2%;
+  font-size: 20px;
 }
-h2 {
+.container .intro-sec p {
+  margin: 20px 0px 0px;
+  font-size: 19px;
+}
+.container h2 {
   font-size: 30px;
 }
-.whole-content {
+.container .whole-content {
+  width: 899px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 19px;
+}
+@media (max-width: 500px) {
+  .container .whole-content {
+    width: 100%;
+    display: flex;
+  }
+}
+.container .top-content {
+  padding: 15px 0px;
+  width: 45%;
+  font-size: 19px;
+}
+.container li {
+  border: 1px solid black;
+  padding: 10px;
+}
+.table {
+  width: 100%;
+  margin: 10px 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  font-size: 25px;
+  font-size: 19px;
+}
+.table .lead-column {
+  font-size: 21px;
+}
+.table .column-one {
+  width: 10%;
+}
+.table .column-two {
+  width: 20%;
+}
+.table .column-three {
+  width: 40%;
+}
+.table .column-four {
+  width: 30%;
+}
+.table li {
+  padding: 10px;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  margin: 10px 0px 0px;
+  background: grey;
+}
+.footer p {
+  text-align: center;
+  padding: 15px 0px 0px;
+  color: white;
 }
